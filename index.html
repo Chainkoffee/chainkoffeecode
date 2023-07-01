@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chainkoffee</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   
+</body>
+</html>
+  
 <!-- 1. NAVBAR -->
 
+
 <nav class="navbar">
-  <div class="logo">
-   <img src="assets/img/logo.png.png" alt="Logo">
+  <div class="navbar__left">
+    <img src="assets/img/logo.jpeg" alt="Logo" class="navbar__logo">
   </div>
-  <div class="navbar-sections">
-    <div class="navbar-section">
-      <a href="about.html">About Us</a>
-    </div>
-    <div class="navbar-section">
-      <a href="explore.html">Explore</a>
-    </div>
+  <div class="navbar__middle">
+    <a href="#" class="navbar__link">Explore</a>
+    <a href="#" class="navbar__link">About</a>
   </div>
-  <div class="navbar-sections">
-    <div class="navbar-section">
-      <a href="login.html" class="btn">Login</a>
-    </div>
-    <div class="navbar-section">
-      <a href="signup.html" class="btn btn-primary">Sign Up</a>
-    </div>
+  <div class="navbar__right">
+    <button class="navbar__button">Sign Up</button>
+    <button class="navbar__button">Log In</button>
   </div>
 </nav>
+
 <!-- NAVBAR END -->
 
 
 <!-- 2. HERO SECTION -->
 <section class="hero-section">
-  <div class="hero-text">
-    <h1>Unlocking web3 payments: Your Gateway to Seamless Crypto Transactions</h1>
-    <p class="subtext">Accept donations, start a membership. Sell anything you like, it's easier than you think.</p>
-    <a href="chainkoffee.com/yourname" class="btn btn-secondary">Claim</a>
+  <div id="hero-case">
+    <div class="hero-text">
+      <h1>Unlocking web3 payments: Your Gateway to Seamless Crypto Transactions</h1>
+      <p class="subtext">Accept donations, start a membership. Sell anything you like, it's easier than you think.</p>
+    </div>
+    <div class="claim-button">
+      <span>chainkoffee.com/</span>
+      <input type="text" id="username" placeholder="your wallet address">
+      <button id="claim-btn">Claim</button>
+    </div>
   </div>
-  <div class="hero-image">
-    <img src="your-image.jpg" alt="Image">
+  
+  <div class="slideshow">
+    <!--<img src="assets/img/first-hero.jpeg" alt="Image 1" id="image1">-->
+    <img src="assets/img/second-hero.jpeg" alt="Image 2" id="image2">
   </div>
 </section>
+
 <!-- END OF HERO SECTION -->
 
 
@@ -51,10 +60,10 @@
   <div class="payment-text">
     <h2>We make payment easy with web3</h2>
     <p class="subtext">Accept donations seamlessly. Start a membership. Sell anything you like. It's easier than you think.</p>
-    <a href="#" class="btn btn-primary">Connect Wallets</a>
+    <button class="connect-btn">Connect Wallet</button>
   </div>
-  <div class="payment-image">
-    <img src="payment-image.jpg" alt="Payment Image">
+  <div id="payment-image">
+    <img src="assets/img/payment.jpeg" alt="Payment Image">
   </div>
 </section>
 <!-- END OF ACCEPT PAYMENTS -->
@@ -63,7 +72,7 @@
 <!-- 4. CREATORS SECTION -->
 <section class="creators-section">
   <div class="creators-text">
-    <h3>1000 creators trust Chain Koffee</h3>
+    <h3>Over 1000 creators trust Chain Koffee</h3>
   </div>
   <div class="testimonials">
     <div class="testimonial">
@@ -80,31 +89,29 @@
     </div>
   </div>
   <div class="pictures-row">
-    <img src="picture1.jpg" alt="Picture 1">
-    <img src="picture2.jpg" alt="Picture 2">
-    <img src="picture3.jpg" alt="Picture 3">
-    <img src="picture4.jpg" alt="Picture 4">
+    <img src="assets/img/picture1.jpeg" alt="Picture 1">
+    <img src="assets/img/picture2.jpeg" alt="Picture 2">
+    <img src="assets/img/picture3.jpeg" alt="Picture 3">
+    <img src="assets/img/picture4.jpeg" alt="Picture 4">
   </div>
 </section>
 <!-- END OF CREATOR SECTION -->
 
 
 <!-- 5. Categories section -->
-<br/>
-<br/>
 <section class="categories-section">
-  <div class="categories-row">
-    <a href="#" class="category-btn">Artists</a>
-    <a href="#" class="category-btn">Cosplayers</a>
-    <a href="#" class="category-btn">Writers</a>
-    <a href="#" class="category-btn">Podcasts</a>
-    <a href="#" class="category-btn">Developers</a>
-    <a href="#" class="category-btn">Musicians</a>
+  <div class="categories-row" id="cate">
+    <button>Artist</button>
+    <button>Cosplayers</button>
+    <button>Writers</button>
+    <button>Podcasts</button>
+    <button>Developers</button>
+    <button>Musicians</button>
   </div>
-  <div class="categories-row">
-    <a href="#" class="category-btn">Streamers</a>
-    <a href="#" class="category-btn">Video Creators</a>
-    <a href="#" class="category-btn">Communities</a>
+  <div class="categories-second-row">
+    <button>Streamers</button>
+    <button>Video Creators</button>
+    <button>Communities</button>
   </div>
 </section>
 <!-- End of categories section -->
@@ -114,36 +121,54 @@
 <section class="image-section">
   <div class="image-row">
     <div class="image-item">
-      <img src="image1.jpg" alt="Image 1">
+      <img src="assets/img/image1.jpeg" alt="Image 1">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
     <div class="image-item">
-      <img src="image2.jpg" alt="Image 2">
+      <img src="assets/img/image2.jpeg" alt="Image 2">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
     <div class="image-item">
-      <img src="image3.jpg" alt="Image 3">
+      <img src="assets/img/image3.jpeg" alt="Image 3">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
   </div>
   <div class="image-row">
     <div class="image-item">
-      <img src="image4.jpg" alt="Image 4">
+      <img src="assets/img/image4.jpeg" alt="Image 4">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
     <div class="image-item">
-      <img src="image5.jpg" alt="Image 5">
+      <img src="assets/img/image5.jpg" alt="Image 5">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
     <div class="image-item">
-      <img src="image6.jpg" alt="Image 6">
+      <img src="assets/img/image6.jpeg" alt="Image 6">
       <p class="image-text">Get more followers on twitter</p>
-      <a href="#" class="btn">Support</a>
+      <button>
+        <img src="assets/img/small.png" alt="Image">
+        <span>Support</span>
+      </button>
     </div>
   </div>
 </section>
@@ -155,9 +180,9 @@
 <!-- 7. Footer Section -->
 <footer class="footer-section">
   <div class="footer-row">
-    <p class="footer-text">One platform, infinite potential</p>
+    <p class="footer-text-one">One platform, infinite potential</p>
   </div>
-  <div class="footer-row">
+  <div class="footer-row-two">
     <p class="footer-text">We know what really matters to you and your audience. That's why we built a best-in-class platform to help you present your content in the best light possible.</p>
   </div>
 </footer>
