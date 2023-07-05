@@ -1,0 +1,112 @@
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    /* Add your mobile styles here */
+    .navlogo {
+        height: 25px;
+    }
+
+    .contain-him {
+        max-width: 18rem;
+    }
+
+    .hero-text {
+        font-size: 1.8rem;
+    }
+
+    .sub-text {
+        font-size: 0.85rem;
+        padding-top: 0.3rem;
+        max-width: 18rem;
+    }
+
+    #u-input {
+        width: 17rem;
+        height: 3rem;
+    }
+
+    .heroes1 {
+        padding-left: 1.3rem;
+        margin-top: 3rem;
+    }
+
+    .pre-text {
+        font-size: 0.8rem;
+        margin-left: 0.8rem;
+    }
+
+    .placeholder {
+        margin-top: -4.65rem;
+        left: 7.2rem;
+        font-size: 0.8rem;
+    }
+
+    .u-input-btn {
+        margin-top: -4.85rem;
+        font-size: 0.8rem;
+        left: 3rem;
+        padding: 0.6rem;
+    }
+
+    .didntputoneb4 {
+        margin-top: 1rem;
+    }
+
+    .hero {
+        display: block !important;
+    }
+
+    .hero-img {
+        width: 20rem !important;
+    }
+
+    .secondsec {
+        margin: 0;
+    }
+
+    .counterhero {
+        font-size: 1.8rem;
+    }
+
+    .testimonials {
+        display: block;
+    }
+
+    .ehc {
+        font-size: 1.8rem !important;
+    }
+
+    .pictures-row {
+        display: block;
+    }
+
+    .disappearo {
+        display: none !important;
+    }
+
+    .pictures-row img {
+        width: 60%;
+        height: 60%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    .categories-section {
+        max-width: 20rem;
+    }
+
+    .categories-row button, .categories-second-row button {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        border: 1.5px solid #FFCE6C;
+  }
+  
+  /* For tablets */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Add your tablet styles here */
+  }
+  
+  /* For small laptops and desktops */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Add your small laptop and desktop styles here */
+  }

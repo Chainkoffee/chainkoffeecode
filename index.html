@@ -1,197 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chainkoffee</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Chainkoffee</title>
 </head>
 <body>
-  
-</body>
-</html>
-  
-<!-- 1. NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navb">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.jpeg" alt="Logo" class="img-fluid navlogo px-3" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link px-4 mt-2" href="#">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 mt-2" href="#">About</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <div class="px-3">
+                        <a href="#" class="nav-link mt-2">Log in</a>
+                    </div>
+                    <div class="px-3">
+                        <button class="btn btn-primary sign-btn" type="button">Sign up</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
 
 
-<nav class="navbar">
-  <div class="navbar__left">
-    <img src="assets/img/logo.jpeg" alt="Logo" class="navbar__logo">
-  </div>
-  <div class="navbar__middle">
-    <a href="#" class="navbar__link">Explore</a>
-    <a href="#" class="navbar__link">About</a>
-  </div>
-  <div class="navbar__right">
-    <button class="navbar__button">Sign Up</button>
-    <button class="navbar__button">Log In</button>
-  </div>
-</nav>
-
-<!-- NAVBAR END -->
-
-
-<!-- 2. HERO SECTION -->
-<section class="hero-section">
-  <div id="hero-case">
-    <div class="hero-text">
-      <h1>Unlocking web3 payments: Your Gateway to Seamless Crypto Transactions</h1>
-      <p class="subtext">Accept donations, start a membership. Sell anything you like, it's easier than you think.</p>
+    <div class="hero d-flex">
+        <div class="heroes1">
+            <div class="contain-him">
+            <p class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                Unlocking Web3 Payments: Your Gateway to Seamless Crypto Transactions.
+            </p>
+            <p class="sub-text" data-aos="fade-right" data-aos-duration="1100">
+                Accept donations. Start a membership. Sell anything you like. It’s easier than you think.
+            </p>
+        </div>
+        <div class="didntputoneb4" data-aos="fade-right" data-aos-duration="1500">
+            <span class="pre-text">ChainKoffee.com/</span>
+            <input type="text" name="username" id="u-input" disabled>
+            <input type="text" class="placeholder" placeholder="your username">
+            <button class="btn u-input-btn">Claim</button>
+        </div>
+        </div>
+        <div class="heroes2" data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/img/atruehero.png" alt="hero" class="img-fluid hero-img">
+        </div>
     </div>
-    <div class="claim-button">
-      <span>chainkoffee.com/</span>
-      <input type="text" id="username" placeholder="your wallet address">
-      <button id="claim-btn">Claim</button>
-    </div>
-  </div>
-  
-  <div class="slideshow">
-    <!--<img src="assets/img/first-hero.jpeg" alt="Image 1" id="image1">-->
-    <img src="assets/img/second-hero.jpeg" alt="Image 2" id="image2">
-  </div>
-</section>
+    <br /> <br />
+    <section class="secondsec container-fluid mx-auto">
+      <div class="sec-text text-center">
+        <h3 class="counterhero" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="1000">We make payment easy with web3</h3>
+        <p class="sub-text text-center" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="1200">
+          Accept donations seamlessly. Start a membership. Sell anything you like.
+          It’s easier than you think.
+        </p>
+      </div>
 
-<!-- END OF HERO SECTION -->
+      <div class="connbtn mx-auto text-center">
+        <button class="btn sign-btn connect-btn" type="button" data-aos="zoom-in" data-aos-duration="1000" >
+          Connect Wallet
+        </button>
 
+        <div class="container amiahero">
+          <img src="assets/img/amiahero.png" alt="" class="img-fluid" data-aos="fade-up-left" data-aos-duration="1500">
+        </div>
+      </div>
+    </section>  
 
-<!-- 3. ACCEPT PAYMENTS -->
-<section class="payment-section">
-  <div class="payment-text">
-    <h2>We make payment easy with web3</h2>
-    <p class="subtext">Accept donations seamlessly. Start a membership. Sell anything you like. It's easier than you think.</p>
-    <button class="connect-btn">Connect Wallet</button>
-  </div>
-  <div id="payment-image">
-    <img src="assets/img/payment.jpeg" alt="Payment Image">
-  </div>
-</section>
-<!-- END OF ACCEPT PAYMENTS -->
+    <br /><br />
 
-
-<!-- 4. CREATORS SECTION -->
-<section class="creators-section">
-  <div class="creators-text">
-    <h3>Over 1000 creators trust Chain Koffee</h3>
-  </div>
-  <div class="testimonials">
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>"A wonderful creator-friendly platform"</p>
-    </div>
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐</div>
-      <p>"Everything i need to make income doing what i love"</p>
-    </div>
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>"Get paid for your passion and more!"</p>
-    </div>
-  </div>
-  <div class="pictures-row">
-    <img src="assets/img/picture1.jpeg" alt="Picture 1">
-    <img src="assets/img/picture2.jpeg" alt="Picture 2">
-    <img src="assets/img/picture3.jpeg" alt="Picture 3">
-    <img src="assets/img/picture4.jpeg" alt="Picture 4">
-  </div>
-</section>
-<!-- END OF CREATOR SECTION -->
+    <section class="thirdsec container-fluid mx-auto">
+      <div class="review-sec">
+        <div>
+          <h3 class="ehc text-center">Over 1000 Creators trust <span class="greenishify">Chain Koffee</span></h3></h3>
+        </div>
+        <div class="testimonials text-center">
+          <div class="testimonial" data-aos="fade-left" data-aos-duration="1000">
+            <div class="stars ">⭐⭐⭐⭐⭐</div>
+            <p>"A wonderful creator-friendly platform"</p>
+          </div>
+          <div class="testimonial" data-aos="fade-left" data-aos-duration="1200">
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>"Everything i need to make income doing what i love"</p>
+          </div>
+          <div class="testimonial" data-aos="fade-left" data-aos-duration="1400">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Get paid for your passion and more!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-sec">
+        <div class="pictures-row carousel slide" data-bs-ride="carousel">
+          <img src="assets/img/picture1.jpeg" alt="Picture 1" class="disappearo">
+          <img src="assets/img/picture2.jpeg" alt="Picture 2">
+          <img src="assets/img/picture3.jpeg" alt="Picture 3">
+          <img src="assets/img/picture4.jpeg" alt="Picture 4" class="disappearo">
+        </div>
+      </div>
+    </section>
 
 
-<!-- 5. Categories section -->
-<section class="categories-section">
-  <div class="categories-row" id="cate">
-    <button>Artist</button>
-    <button>Cosplayers</button>
-    <button>Writers</button>
-    <button>Podcasts</button>
-    <button>Developers</button>
-    <button>Musicians</button>
-  </div>
-  <div class="categories-second-row">
-    <button>Streamers</button>
-    <button>Video Creators</button>
-    <button>Communities</button>
-  </div>
-</section>
-<!-- End of categories section -->
+    <section class="categories-section" data-aos="fade-down" data-aos-duration="1400">
+      <div class="categories-row" id="cate">
+        <button>Artist</button>
+        <button>Cosplayers</button>
+        <button>Writers</button>
+        <button>Podcasts</button>
+        <button>Developers</button>
+        <button>Musicians</button>
+      </div>
+      <div class="categories-second-row">
+        <button>Streamers</button>
+        <button>Video Creators</button>
+        <button>Communities</button>
+      </div>
+    </section>
 
 
-<!-- 6. image section -->
-<section class="image-section">
-  <div class="image-row">
-    <div class="image-item">
-      <img src="assets/img/image1.jpeg" alt="Image 1">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-    <div class="image-item">
-      <img src="assets/img/image2.jpeg" alt="Image 2">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-    <div class="image-item">
-      <img src="assets/img/image3.jpeg" alt="Image 3">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-  </div>
-  <div class="image-row">
-    <div class="image-item">
-      <img src="assets/img/image4.jpeg" alt="Image 4">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-    <div class="image-item">
-      <img src="assets/img/image5.jpg" alt="Image 5">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-    <div class="image-item">
-      <img src="assets/img/image6.jpeg" alt="Image 6">
-      <p class="image-text">Get more followers on twitter</p>
-      <button>
-        <img src="assets/img/small.png" alt="Image">
-        <span>Support</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- End of image section -->
-
-
-
-<!-- 7. Footer Section -->
-<footer class="footer-section">
-  <div class="footer-row">
-    <p class="footer-text-one">One platform, infinite potential</p>
-  </div>
-  <div class="footer-row-two">
-    <p class="footer-text">We know what really matters to you and your audience. That's why we built a best-in-class platform to help you present your content in the best light possible.</p>
-  </div>
-</footer>
-
-<!-- End of footer section -->
-
-
-  <!-- LINKING JAVASCRIPT -->
-  <script src="chain.js"></script>
-  <!-- END OF LINKING JAVASCRIPT -->
+    <section class="image-section">
+      <div class="image-row">
+        <div class="image-item">
+          <img src="assets/img/image1.jpeg" alt="Image 1">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+        <div class="image-item">
+          <img src="assets/img/image2.jpeg" alt="Image 2">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+        <div class="image-item">
+          <img src="assets/img/image3.jpeg" alt="Image 3">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+      </div>
+      <div class="image-row">
+        <div class="image-item">
+          <img src="assets/img/image4.jpeg" alt="Image 4">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+        <div class="image-item">
+          <img src="assets/img/image5.jpg" alt="Image 5">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+        <div class="image-item">
+          <img src="assets/img/image6.jpeg" alt="Image 6">
+          <p class="image-text">Get more followers on twitter</p>
+          <button class="abtn">
+            <img src="assets/img/small.png" alt="Image">
+            <span>Support</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="anyonecanbeahero" data-aos="fade-down">
+      <h3 class="ehc text-center">One Platform, infinite potential</h3>
+      <p class="sub-text text-center">
+        We know what really matters to you and your audience. That’s why we built a best-in-class platform to help you present your content in the best light possible.
+      </p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
