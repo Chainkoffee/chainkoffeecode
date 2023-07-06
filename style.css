@@ -3,6 +3,10 @@
     background-color: black !important;
 }
 
+.offcanvas {
+  background-color: black !important;
+}
+
 .navlogo {
     height: 30px;
 }
@@ -312,4 +316,9 @@ body {
 
 .anyonecanbeahero {
     margin-top: 5rem; 
+}
+
+.offcanvas {
+  background-color: #121212;
+  width: 70% !important;
 }
