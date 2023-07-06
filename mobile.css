@@ -42,7 +42,7 @@
     }
 
     .u-input-btn {
-        margin-top: -4.85rem;
+        margin-top: -4.80rem;
         font-size: 0.8rem;
         left: 3rem;
         padding: 0.6rem;
@@ -70,6 +70,12 @@
 
     .testimonials {
         display: block;
+    }
+
+    .testimonial {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ehc {
