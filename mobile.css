@@ -3,6 +3,7 @@
     /* Add your mobile styles here */
     .navlogo {
         height: 25px;
+        max-width: fit-content;
     }
 
     .contain-him {
@@ -112,6 +113,10 @@
   .theselectedfew {
     display: block;
     margin-bottom: 2rem;
+  }
+
+  .welcometospiderman {
+    border: 2px solid red;
   }
 }
   
